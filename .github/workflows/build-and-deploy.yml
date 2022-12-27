@@ -6,13 +6,15 @@ on:
 
 jobs:
   build:
-		
+		name: Build
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Check out code
+        uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v3
+      - name: Update Node
+        uses: actions/setup-node@v3
         with:
           # update the Node version to meet your needs
           node-version: 16
