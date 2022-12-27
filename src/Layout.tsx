@@ -5,7 +5,6 @@ import NavBar from "../src/NavBar"
 import ToolBar from "@mui/material/Toolbar"
 import Box from "@mui/material/Box"
 import bg from "./img/background.jpg"
-import Fade from "react-reveal/Fade"
 
 interface Props {
   children?: ReactNode
@@ -23,11 +22,7 @@ export default function Layout({ children }: Props) {
       <NavBar />
       <ToolBar />
       <Container maxWidth="lg" style={{ marginBottom: 0, paddingBottom: 0 }}>
-        <main>
-          <Fade duration={1500} distance={"12%"} bottom>
-            {children}
-          </Fade>
-        </main>
+        <main>{children}</main>
       </Container>
       <Box
         sx={{
