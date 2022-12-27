@@ -2,13 +2,11 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
-		name: Build
     runs-on: ubuntu-latest
-
     steps:
       - name: Check out code
         uses: actions/checkout@v3
@@ -29,7 +27,7 @@ jobs:
 
       - name: Deploy
         # https://github.com/JamesIves/github-pages-deploy-action
-        uses: JamesIves/github-pages-deploy-action@4.4.0 
+        uses: JamesIves/github-pages-deploy-action@4.4.0
         with:
           branch: gh-pages
           folder: out
