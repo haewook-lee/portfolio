@@ -9,15 +9,14 @@ export default function Portfolio() {
     flexDirection: "column",
     height: "82vh",
     padding: "5vh 5vw",
-    borderRadius: "7%",
-    backgroundImage:
-      "linear-gradient(135deg, hsla(206, 100%, 76%, 1) 0%, hsla(190, 90%, 92%, 1) 50%, hsla(16, 81%, 58%, 1) 100%)",
+    borderRadius: "3%",
+    // backgroundImage:
+    //   "linear-gradient(135deg, #404040 0%, #535353 50%, #7b7b7b 100%)",
+    background: "#fef9f3",
     transition: "all 0.7s",
-    opacity: "0.8",
     margin: "5vh auto",
     maxWidth: "1024px",
     "&:hover": {
-      opacity: "1",
       marginTop: "4.5vh",
       marginBottom: "5.5vh",
       boxShadow: "2px 2px 3px 2px grey",
@@ -25,11 +24,11 @@ export default function Portfolio() {
   }
 
   const typeStyle = {
-    color: "#191970",
+    color: "#363636",
   }
 
   const imgStyle = {
-    borderRadius: "7%",
+    borderRadius: "3%",
     maxHeight: "100%",
     maxWidth: "100%",
   }

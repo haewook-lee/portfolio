@@ -4,7 +4,6 @@ import Container from "@mui/material/Container"
 import NavBar from "../src/NavBar"
 import ToolBar from "@mui/material/Toolbar"
 import Box from "@mui/material/Box"
-import bg from "./img/background.jpg"
 
 interface Props {
   children?: ReactNode
@@ -19,20 +18,26 @@ export default function Layout({ children }: Props) {
         <meta name="description" content="Haewook Lee" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <NavBar />
+      {/* <NavBar /> */}
       <ToolBar />
-      <Container maxWidth="lg" style={{ marginBottom: 0, paddingBottom: 0 }}>
+      <Container
+        maxWidth="lg"
+        style={{
+          marginBottom: 0,
+          paddingBottom: 0,
+        }}
+      >
         <main>{children}</main>
       </Container>
-      <Box
+      {/* <Box
         sx={{
-          backgroundImage: `url(${bg.src})`,
+          backgroundImage: "/haewook-lee.github.io/background.jpg",
           backgroundPositionX: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
           height: "50vh",
         }}
-      />
+      /> */}
     </>
   )
 }

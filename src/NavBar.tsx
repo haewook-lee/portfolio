@@ -38,12 +38,9 @@ export default function NavBar(props: Props) {
   }
 
   const drawer = (
-    <Box
-      onClick={handleDrawerToggle}
-      sx={{ textAlign: "center", background: "black" }}
-    >
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Divider />
-      <List sx={{ textAlign: "center", background: "black" }}>
+      <List sx={{ textAlign: "center" }}>
         {navItems.map((item) => (
           <ListItem
             component={Link}
@@ -51,7 +48,7 @@ export default function NavBar(props: Props) {
             disablePadding
             href={item.url}
           >
-            <ListItemButton sx={{ textAlign: "center", color: "white" }}>
+            <ListItemButton sx={{ textAlign: "center", color: "#fef9f3" }}>
               <ListItemText primary={item.label} />
             </ListItemButton>
           </ListItem>
@@ -64,11 +61,15 @@ export default function NavBar(props: Props) {
     window !== undefined ? () => window().document.body : undefined
 
   return (
-    <Box sx={{ display: "flex", background: "black" }}>
+    <Box
+      sx={{
+        display: "flex",
+      }}
+    >
       <CssBaseline />
       <AppBar
         component="nav"
-        sx={{ background: "black", borderBottom: "solid white 2px" }}
+        sx={{ background: "#363636", borderBottom: "solid black 2px" }}
       >
         <Toolbar>
           <IconButton
@@ -89,7 +90,7 @@ export default function NavBar(props: Props) {
           </Box>
         </Toolbar>
       </AppBar>
-      <Box component="nav" sx={{ background: "black" }}>
+      <Box component="nav" sx={{}}>
         <Drawer
           container={container}
           variant="temporary"
@@ -103,7 +104,7 @@ export default function NavBar(props: Props) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
-              background: "black",
+              background: "#363636",
             },
           }}
         >
