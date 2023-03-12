@@ -19,20 +19,15 @@ export default function Home() {
         my: 4,
         display: "flex",
         flexDirection: "column",
-        justifyContent: "left",
-        alignItems: "left",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <Typography variant="h2" component="h1" gutterBottom>
         Haewook Lee.
       </Typography>
-      <Typography variant="h2" component="h1" gutterBottom>
-        Frontend Developer.
-      </Typography>
-      <Typography variant="h6" component="h1" gutterBottom>
-        I develop using a modern React/Typescript stack, but I also like to
-        explore backend technologies as well. I strive to make apps that are
-        simple and clean because in the end, apps should make our lives easier.
+      <Typography variant="h4" component="h1" gutterBottom>
+        Software Developer.
       </Typography>
       <Box>
         <SocialIcon
