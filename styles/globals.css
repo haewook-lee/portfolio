@@ -4,7 +4,7 @@
   /* --font-mono: "Open Sans", ui-monospace, Menlo, Monaco, "Cascadia Mono",
     "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace",
     "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace; */
-  --font-mono: Garamond, "Baskerville Old Face", "Hoefler Text",
+  --font-mono: "Bebas Neue", Garamond, "Baskerville Old Face", "Hoefler Text",
     "Times New Roman", serif !important;
 
   /* --foreground-rgb: 0, 0, 0;
@@ -81,8 +81,9 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Playfair Display", Garamond, "Baskerville Old Face",
-    "Hoefler Text", "Times New Roman", serif !important;
+  /* font-family: "Playfair Display", Garamond, "Baskerville Old Face",
+    "Hoefler Text", "Times New Roman", serif !important; */
+  font-weight: 600 !important;
 }
 
 html,
@@ -92,8 +93,11 @@ body {
 }
 
 body {
-  color: #fef9f3 !important;
-  background: #363636 !important;
+  color: #f2f2f2 !important;
+  /* background: #363636 !important; */
+  /* color: #05386b !important; */
+  background: #c96567 !important;
+
   /* background: linear-gradient(
     135deg,
     #363636 0%,

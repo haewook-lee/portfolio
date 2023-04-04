@@ -13,7 +13,8 @@ export default function Portfolio() {
     height: "100%",
     padding: "5vh 5vw",
     borderRadius: "3%",
-    background: "#fef9f3",
+    background: "#ececec",
+    // background: "#88bdbc",
     transition: "all 0.7s",
     margin: "5vh auto",
     maxWidth: "764px",
@@ -25,7 +26,7 @@ export default function Portfolio() {
   }
 
   const typeStyle = {
-    color: "#363636",
+    color: "#112d32",
   }
 
   const imgStyle = {
@@ -50,7 +51,7 @@ export default function Portfolio() {
           </Typography>
           <IconButton
             style={{
-              color: "rgba(0, 0, 0, 0.87)",
+              color: "#112d32",
               margin: "auto",
             }}
             href="https://haewook-lee.github.io/movie-site"

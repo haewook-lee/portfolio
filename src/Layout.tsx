@@ -1,9 +1,10 @@
 import React, { ReactNode } from "react"
 import Head from "next/head"
 import Container from "@mui/material/Container"
-import NavBar from "../src/NavBar"
+import NavBar from "./HamburgerNavBar"
 import ToolBar from "@mui/material/Toolbar"
 import Box from "@mui/material/Box"
+import ButtonAppBar from "./SimpleNavBar"
 
 interface Props {
   children?: ReactNode
@@ -18,7 +19,6 @@ export default function Layout({ children }: Props) {
         <meta name="description" content="Haewook Lee" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      {/* <NavBar /> */}
       <ToolBar />
       <Container
         maxWidth="lg"
@@ -29,15 +29,6 @@ export default function Layout({ children }: Props) {
       >
         <main>{children}</main>
       </Container>
-      {/* <Box
-        sx={{
-          backgroundImage: "/haewook-lee.github.io/background.jpg",
-          backgroundPositionX: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "contain",
-          height: "50vh",
-        }}
-      /> */}
     </>
   )
 }

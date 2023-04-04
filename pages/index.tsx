@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <Box
       sx={{
-        my: 4,
+        my: 8,
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -25,12 +25,12 @@ export default function Home() {
     >
       <FadeIn>
         <Typography variant="h2" component="h1" gutterBottom>
-          Haewook Lee.
+          HAEWOOK LEE.
         </Typography>
       </FadeIn>
       <FadeIn delay={0.5}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Software Developer.
+        <Typography variant="h5" component="h1" gutterBottom>
+          Software Developer
         </Typography>
       </FadeIn>
       <FadeIn delay={1}>
@@ -38,20 +38,20 @@ export default function Home() {
           <SocialIcon
             url="https://github.com/haewook-lee"
             style={iconStyle}
-            bgColor="white"
-            fgColor="black"
+            bgColor="#112d32"
+            fgColor="#fef9f3"
           />
           <SocialIcon
             url="https://linkedin.com/in/haewook-lee-232bba4a"
             style={iconStyle}
-            bgColor="white"
-            fgColor="black"
+            bgColor="#112d32"
+            fgColor="#fef9f3"
           />
           <SocialIcon
             url="mailto:20hwlee@gmail.com"
             style={iconStyle}
-            bgColor="white"
-            fgColor="black"
+            bgColor="#112d32"
+            fgColor="#fef9f3"
           />
         </Box>
       </FadeIn>

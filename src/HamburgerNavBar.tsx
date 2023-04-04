@@ -104,7 +104,7 @@ export default function NavBar(props: Props) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
-              background: "#363636",
+              background: "#254e58",
             },
           }}
         >
