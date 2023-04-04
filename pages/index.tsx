@@ -28,12 +28,12 @@ export default function Home() {
           HAEWOOK LEE.
         </Typography>
       </FadeIn>
-      <FadeIn delay={0.5}>
+      <FadeIn delay={0.25}>
         <Typography variant="h5" component="h1" gutterBottom>
           Software Developer
         </Typography>
       </FadeIn>
-      <FadeIn delay={1}>
+      <FadeIn delay={0.5}>
         <Box>
           <SocialIcon
             url="https://github.com/haewook-lee"

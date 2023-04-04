@@ -1,9 +1,10 @@
 import React from "react"
-import Box from "@mui/material/Box"
 import Grid from "@mui/material/Grid"
 import Typography from "@mui/material/Typography"
 import TheatersOutlinedIcon from "@mui/icons-material/TheatersOutlined"
 import IconButton from "@mui/material/IconButton"
+
+import FadeIn from "../../components/FadeIn"
 
 export default function Portfolio() {
   const boxStyle = {
@@ -41,25 +42,27 @@ export default function Portfolio() {
 
   return (
     <>
-      <Grid spacing={4}>
-        <Grid sx={boxStyle} xs={12} sm={6} md={4}>
-          <Typography variant="subtitle1" component="h1" sx={typeStyle}>
-            Web App (NextJS + CMS)
-          </Typography>
-          <Typography variant="h4" component="h1" sx={typeStyle}>
-            Movie Database Site
-          </Typography>
-          <IconButton
-            style={{
-              color: "#112d32",
-              margin: "auto",
-            }}
-            href="https://haewook-lee.github.io/movie-site"
-          >
-            <TheatersOutlinedIcon sx={{ fontSize: "14rem" }} />
-          </IconButton>
+      <FadeIn>
+        <Grid spacing={4}>
+          <Grid sx={boxStyle} xs={12} sm={6} md={4}>
+            <Typography variant="subtitle1" component="h1" sx={typeStyle}>
+              Web App (NextJS + CMS)
+            </Typography>
+            <Typography variant="h4" component="h1" sx={typeStyle}>
+              Movie Database Site
+            </Typography>
+            <IconButton
+              style={{
+                color: "#112d32",
+                margin: "auto",
+              }}
+              href="https://haewook-lee.github.io/movie-site"
+            >
+              <TheatersOutlinedIcon sx={{ fontSize: "14rem" }} />
+            </IconButton>
+          </Grid>
         </Grid>
-      </Grid>
+      </FadeIn>
     </>
   )
 }

@@ -17,7 +17,7 @@ interface FadeProps {
   children: ReactNode | ReactNode[]
 }
 
-const FadeIn: FC<FadeProps> = ({ duration = 5, delay = 0, children }) => {
+const FadeIn: FC<FadeProps> = ({ duration = 3, delay = 0, children }) => {
   return (
     <Wrapper
       style={{
