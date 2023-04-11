@@ -2,6 +2,7 @@ import React from "react"
 import Grid from "@mui/material/Grid"
 import Typography from "@mui/material/Typography"
 import TheatersOutlinedIcon from "@mui/icons-material/TheatersOutlined"
+import { FitnessCenterOutlined } from "@mui/icons-material"
 import IconButton from "@mui/material/IconButton"
 
 import FadeIn from "../../components/FadeIn"
@@ -44,6 +45,23 @@ export default function Portfolio() {
     <>
       <FadeIn>
         <Grid spacing={4}>
+          <Grid sx={boxStyle} xs={12} sm={6} md={4}>
+            <Typography variant="subtitle1" component="h1" sx={typeStyle}>
+              Web App (NextJS + MongoDB)
+            </Typography>
+            <Typography variant="h4" component="h1" sx={typeStyle}>
+              Workout Database/Tracker (WIP)
+            </Typography>
+            <IconButton
+              style={{
+                color: "#112d32",
+                margin: "auto",
+              }}
+              href="https://lifting-fit.vercel.app"
+            >
+              <FitnessCenterOutlined sx={{ fontSize: "14rem" }} />
+            </IconButton>
+          </Grid>
           <Grid sx={boxStyle} xs={12} sm={6} md={4}>
             <Typography variant="subtitle1" component="h1" sx={typeStyle}>
               Web App (NextJS + CMS)
