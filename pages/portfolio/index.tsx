@@ -4,10 +4,20 @@ import Typography from "@mui/material/Typography"
 import TheatersOutlinedIcon from "@mui/icons-material/TheatersOutlined"
 import { FitnessCenterOutlined } from "@mui/icons-material"
 import IconButton from "@mui/material/IconButton"
+import { SocialIcon } from "react-social-icons"
 
 import FadeIn from "../../components/FadeIn"
 
 export default function Portfolio() {
+  const iconStyle = {
+    margin: "0.5rem",
+    opacity: "0.75",
+    height: 30,
+    width: 30,
+    "&:hover": {
+      opacity: "1",
+    },
+  }
   const boxStyle = {
     my: 4,
     display: "flex",
@@ -21,9 +31,9 @@ export default function Portfolio() {
     margin: "5vh auto",
     maxWidth: "764px",
     "&:hover": {
-      marginTop: "4.5vh",
-      marginBottom: "5.5vh",
-      boxShadow: "2px 2px 3px 2px grey",
+      // marginTop: "4.5vh",
+      // marginBottom: "5.5vh",
+      boxShadow: "5px 5px 7px 5px #88bdbc",
     },
   }
 
@@ -50,8 +60,15 @@ export default function Portfolio() {
               Web App (NextJS + MongoDB)
             </Typography>
             <Typography variant="h4" component="h1" sx={typeStyle}>
-              Workout Database/Tracker (WIP)
+              Workout Database/Tracker (WIP){" "}
+              <SocialIcon
+                url="https://github.com/haewook-lee/lifting-fit"
+                style={iconStyle}
+                bgColor="#112d32"
+                fgColor="#fef9f3"
+              />
             </Typography>
+
             <IconButton
               style={{
                 color: "#112d32",
@@ -67,7 +84,13 @@ export default function Portfolio() {
               Web App (NextJS + CMS)
             </Typography>
             <Typography variant="h4" component="h1" sx={typeStyle}>
-              Movie Database Site
+              Movie Database Site{" "}
+              <SocialIcon
+                url="https://github.com/haewook-lee/movie-site"
+                style={iconStyle}
+                bgColor="#112d32"
+                fgColor="#fef9f3"
+              />
             </Typography>
             <IconButton
               style={{
