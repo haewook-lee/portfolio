@@ -6,7 +6,7 @@ import { FitnessCenterOutlined } from "@mui/icons-material"
 import IconButton from "@mui/material/IconButton"
 import { SocialIcon } from "react-social-icons"
 
-import FadeIn from "../../components/FadeIn"
+import Fade from "react-awesome-reveal"
 
 export default function Portfolio() {
   const iconStyle = {
@@ -26,13 +26,10 @@ export default function Portfolio() {
     padding: "5vh 5vw",
     borderRadius: "3%",
     background: "#ececec",
-    // background: "#88bdbc",
     transition: "all 0.7s",
     margin: "5vh auto",
     maxWidth: "764px",
     "&:hover": {
-      // marginTop: "4.5vh",
-      // marginBottom: "5.5vh",
       boxShadow: "5px 5px 7px 5px #88bdbc",
     },
   }
@@ -41,19 +38,9 @@ export default function Portfolio() {
     color: "#112d32",
   }
 
-  const imgStyle = {
-    borderRadius: "3%",
-    maxHeight: "100%",
-    maxWidth: "100%",
-  }
-
-  const imgContainerStyle = {
-    height: "70%",
-  }
-
   return (
     <>
-      <FadeIn>
+      <Fade cascade damping={0.1}>
         <Grid spacing={4}>
           <Grid sx={boxStyle} xs={12} sm={6} md={4}>
             <Typography variant="subtitle1" component="h1" sx={typeStyle}>
@@ -103,7 +90,7 @@ export default function Portfolio() {
             </IconButton>
           </Grid>
         </Grid>
-      </FadeIn>
+      </Fade>
     </>
   )
 }

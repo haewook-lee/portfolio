@@ -2,7 +2,7 @@ import Box from "@mui/material/Box"
 import Typography from "@mui/material/Typography"
 
 import { SocialIcon } from "react-social-icons"
-import FadeIn from "../components/FadeIn"
+import Fade from "react-awesome-reveal"
 
 export default function Home() {
   const iconStyle = {
@@ -23,17 +23,13 @@ export default function Home() {
         alignItems: "center",
       }}
     >
-      <FadeIn>
+      <Fade cascade>
         <Typography variant="h2" component="h1" gutterBottom>
           HAEWOOK LEE.
         </Typography>
-      </FadeIn>
-      <FadeIn delay={0.25}>
         <Typography variant="h5" component="h1" gutterBottom>
           Software Developer
         </Typography>
-      </FadeIn>
-      <FadeIn delay={0.5}>
         <Box>
           <SocialIcon
             url="https://github.com/haewook-lee"
@@ -54,7 +50,7 @@ export default function Home() {
             fgColor="#fef9f3"
           />
         </Box>
-      </FadeIn>
+      </Fade>
     </Box>
   )
 }
