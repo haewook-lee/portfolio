@@ -27,9 +27,9 @@ export default function ButtonAppBar() {
             <Button sx={{ color: "#fff" }} href="/">
               Home
             </Button>
-            <Button sx={{ color: "#fff" }} href="/portfolio">
+            {/* <Button sx={{ color: "#fff" }} href="/portfolio">
               Portfolio
-            </Button>
+            </Button> */}
           </Box>
         </Toolbar>
       </AppBar>
