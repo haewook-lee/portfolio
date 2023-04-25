@@ -1,11 +1,11 @@
 import Box from "@mui/material/Box"
 import Typography from "@mui/material/Typography"
-import Image from "next/image"
 import React from "react"
 import Grid from "@mui/material/Grid"
 import TheatersOutlinedIcon from "@mui/icons-material/TheatersOutlined"
 import { FitnessCenterOutlined } from "@mui/icons-material"
 import IconButton from "@mui/material/IconButton"
+import Head from "next/head"
 
 import { SocialIcon } from "react-social-icons"
 import Fade from "react-awesome-reveal"
@@ -50,6 +50,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Haewook Lee</title>
+      </Head>
       <Box
         sx={{
           my: 8,
@@ -63,7 +66,7 @@ export default function Home() {
       >
         {/* <Image src="/compy.png" alt="Hero picture" width={400} height={300} /> */}
         {/* <Fade> */}
-        <Typography variant="h2" component="h1">
+        <Typography variant="h3" component="h1">
           HAEWOOK LEE.
         </Typography>
         <Typography variant="h4" component="h1" gutterBottom>
@@ -102,7 +105,7 @@ export default function Home() {
               Web App (NextJS + MongoDB)
             </Typography>
             <Typography variant="h4" component="h1" sx={typeStyle}>
-              Workout Database/Tracker (WIP){" "}
+              Workout Database & Tracker (WIP){" "}
               <SocialIcon
                 url="https://github.com/haewook-lee/lifting-fit"
                 style={iconStyle2}

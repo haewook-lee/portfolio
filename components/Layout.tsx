@@ -15,8 +15,6 @@ export default function Layout({ children }: Props) {
   return (
     <>
       <Head>
-        <title>Haewook Lee</title>
-        <meta name="description" content="Haewook Lee" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <ToolBar />
