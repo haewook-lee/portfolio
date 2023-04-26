@@ -8,7 +8,6 @@ import Typography from "@mui/material/Typography"
 import Container from "@mui/material/Container"
 
 export default function BlogPost({ data }: any) {
-  console.log(data)
   return (
     <>
       <Head>
@@ -26,10 +25,16 @@ export default function BlogPost({ data }: any) {
             maxWidth: 780,
           }}
         >
-          <Typography component="h1" variant="h2" color="text.primary">
+          <Typography component="h1" variant="h3" color="text.primary">
             {data.title}
           </Typography>
-          <Typography component="p" color="text.primary" gutterBottom>
+          <Typography
+            sx={{ pt: 1 }}
+            textAlign="right"
+            component="p"
+            color="text.primary"
+            gutterBottom
+          >
             {new Date(data.publishedAt).toLocaleDateString("en-GB", {
               day: "numeric",
               month: "long",
@@ -50,19 +55,62 @@ export default function BlogPost({ data }: any) {
               alt="splash image"
               sx={{
                 mx: "auto",
+                mb: 8,
                 maxWidth: 500,
               }}
             />
-            <Typography
-              sx={{
-                py: 4,
-              }}
-              gutterBottom
-              component="p"
-              color="text.primary"
-            >
-              {data.body[0].children[0].text}
-            </Typography>
+            {data.body &&
+              data.body.map((text: any) => {
+                return (
+                  <>
+                    {text.style === "normal" ? (
+                      <>
+                        {text.children.map((blurb: any) => {
+                          return (
+                            <>
+                              <Typography
+                                sx={{
+                                  py: 1,
+                                  fontWeight: "400 !important",
+                                }}
+                                // gutterBottom
+                                component="p"
+                                color="text.primary"
+                              >
+                                {/* {data.body && data.body[0].children[0].text} */}
+                                {/* {text.children[0].text} */}
+                                {blurb.text}
+                              </Typography>
+                            </>
+                          )
+                        })}
+                      </>
+                    ) : (
+                      <>
+                        {text.children.map((blurb: any) => {
+                          return (
+                            <>
+                              <Typography
+                                sx={{
+                                  py: 2,
+                                }}
+                                // gutterBottom
+                                variant={text.style}
+                                component={text.style}
+                                color="text.primary"
+                              >
+                                {/* {data.body && data.body[0].children[0].text} */}
+                                {/* {text.children[0].text} */}
+                                {blurb.text}
+                              </Typography>
+                            </>
+                          )
+                        })}
+                      </>
+                    )}
+                  </>
+                )
+              })}
           </Container>
         </Box>
       </main>

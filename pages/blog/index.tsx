@@ -33,8 +33,6 @@ export default function BlogHome() {
       .catch(console.error)
   }, [])
 
-  console.log(blogs)
-
   return (
     <>
       <Head>
