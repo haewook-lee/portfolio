@@ -6,8 +6,19 @@ import CardMedia from "@mui/material/CardMedia"
 import Box from "@mui/material/Box"
 import Typography from "@mui/material/Typography"
 import Container from "@mui/material/Container"
+import { SocialIcon } from "react-social-icons"
 
 export default function BlogPost({ data }: any) {
+  const iconStyle = {
+    margin: "0.5rem 0.5rem 0.5rem 0",
+    opacity: "0.75",
+    "&:hover": {
+      opacity: "1",
+    },
+  }
+
+  console.log(data)
+
   return (
     <>
       <Head>
@@ -112,6 +123,44 @@ export default function BlogPost({ data }: any) {
                 )
               })}
           </Container>
+        </Box>
+        <Box
+          sx={{
+            bgcolor: "#f2f2f2",
+            my: 8,
+            mx: "auto",
+            p: 4,
+            borderRadius: 3,
+            maxWidth: 780,
+          }}
+        >
+          <Typography component="h1" variant="h4" color="text.primary">
+            Haewook Lee
+          </Typography>
+          <Typography component="p" color="text.primary">
+            Software Developer. Always looking for ways to make web apps in new
+            and creative ways.
+          </Typography>
+          <Box>
+            <SocialIcon
+              url="https://github.com/haewook-lee"
+              style={iconStyle}
+              bgColor="#112d32"
+              fgColor="#fef9f3"
+            />
+            <SocialIcon
+              url="https://linkedin.com/in/haewook-lee-232bba4a"
+              style={iconStyle}
+              bgColor="#112d32"
+              fgColor="#fef9f3"
+            />
+            <SocialIcon
+              url="mailto:20hwlee@gmail.com"
+              style={iconStyle}
+              bgColor="#112d32"
+              fgColor="#fef9f3"
+            />
+          </Box>
         </Box>
       </main>
     </>
