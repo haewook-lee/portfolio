@@ -9,29 +9,32 @@ import Box from "@mui/material/Box"
 import Typography from "@mui/material/Typography"
 import Container from "@mui/material/Container"
 import Head from "next/head"
+import { GetStaticProps } from "next"
 
-export default function BlogHome() {
-  const [blogs, setBlogs] = useState<any[]>([])
+export default function BlogHome({ data }: any) {
+  // const [blogs, setBlogs] = useState<any[]>([])
 
-  useEffect(() => {
-    client
-      .fetch(
-        `*[_type == "post"] | order(published desc){
-      title,
-      "slug": slug.current,
-      mainImage{
-        asset->{
-            path, 
-            url
-        }
-      },
-      categories,
-      publishedAt
-    }`
-      )
-      .then((data: any) => setBlogs(data))
-      .catch(console.error)
-  }, [])
+  // useEffect(() => {
+  //   client
+  //     .fetch(
+  //       `*[_type == "post"] | order(published desc){
+  //     title,
+  //     "slug": slug.current,
+  //     mainImage{
+  //       asset->{
+  //           path,
+  //           url
+  //       }
+  //     },
+  //     categories,
+  //     publishedAt
+  //   }`
+  //     )
+  //     .then((data: any) => setBlogs(data))
+  //     .catch(console.error)
+  // }, [])
+
+  const blogs = data
 
   return (
     <>
@@ -63,7 +66,7 @@ export default function BlogHome() {
           {/* End hero unit */}
           <Grid container spacing={4}>
             {blogs &&
-              blogs.map((blog) => (
+              blogs.map((blog: any) => (
                 <Grid item key={blog}>
                   <Card
                     sx={{
@@ -116,4 +119,27 @@ export default function BlogHome() {
       </main>
     </>
   )
+}
+
+const blogsQuery = `*[_type == "post"] | order(published desc){
+    title,
+    "slug": slug.current,
+    mainImage{
+      asset->{
+          path, 
+          url
+      }
+    },
+    categories,
+    publishedAt
+  }`
+
+export const getStaticProps: GetStaticProps = async () => {
+  const blog = await client.fetch(blogsQuery)
+
+  return {
+    props: {
+      data: blog,
+    },
+  }
 }

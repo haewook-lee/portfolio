@@ -17,8 +17,6 @@ export default function BlogPost({ data }: any) {
     },
   }
 
-  console.log(data)
-
   return (
     <>
       <Head>
