@@ -24,10 +24,13 @@ export default function ButtonAppBar() {
       >
         <Toolbar>
           <Box sx={{ display: "block" }}>
-            <Button sx={{ color: "#fff" }} href="/">
+            <Button sx={{ color: "#fff", fontSize: "1.1rem", mx: 2 }} href="/">
               Home
             </Button>
-            <Button sx={{ color: "#fff" }} href="/blog">
+            <Button
+              sx={{ color: "#fff", fontSize: "1.1rem", mx: 2 }}
+              href="/blog"
+            >
               Blog
             </Button>
           </Box>

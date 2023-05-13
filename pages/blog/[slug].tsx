@@ -31,7 +31,7 @@ export default function BlogPost({ data }: any) {
             mx: "auto",
             p: 4,
             borderRadius: 3,
-            maxWidth: 780,
+            maxWidth: "lg",
           }}
         >
           <Typography component="h1" variant="h3" color="text.primary">
@@ -56,7 +56,7 @@ export default function BlogPost({ data }: any) {
               py: 8,
               px: 0,
             }}
-            maxWidth="md"
+            maxWidth="lg"
           >
             <CardMedia
               component="img"
@@ -129,15 +129,14 @@ export default function BlogPost({ data }: any) {
             mx: "auto",
             p: 4,
             borderRadius: 3,
-            maxWidth: 780,
+            maxWidth: "sm",
           }}
         >
           <Typography component="h1" variant="h4" color="text.primary">
             Haewook Lee
           </Typography>
           <Typography component="p" color="text.primary">
-            Software Developer. Always looking for ways to make web apps in new
-            and creative ways.
+            Software Developer. Ex-Lawyer. Hydro Homie.
           </Typography>
           <Box>
             <SocialIcon

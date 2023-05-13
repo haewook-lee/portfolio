@@ -62,7 +62,7 @@ export default function BlogHome({ data }: any) {
             </Typography>
           </Container>
         </Box>
-        <Container sx={{ py: 4, maxWidth: 680, mx: "auto" }} maxWidth="md">
+        <Container sx={{ py: 4, maxWidth: 780, mx: "auto" }} maxWidth="lg">
           {/* End hero unit */}
           <Grid container spacing={4}>
             {blogs &&
@@ -88,7 +88,7 @@ export default function BlogHome({ data }: any) {
                       }}
                     />
                     <CardContent>
-                      <Typography gutterBottom variant="h5" component="h2">
+                      <Typography gutterBottom variant="h4" component="h2">
                         {blog.title}
                       </Typography>
                       <Typography gutterBottom component="p">
@@ -104,8 +104,10 @@ export default function BlogHome({ data }: any) {
                       <Button
                         sx={{
                           color: "#112d32",
+                          borderColor: "#112d32",
                         }}
-                        size="small"
+                        size="medium"
+                        variant="outlined"
                         href={"/blog/" + blog.slug}
                       >
                         Read More

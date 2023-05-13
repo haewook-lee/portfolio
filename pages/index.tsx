@@ -38,7 +38,7 @@ export default function Home() {
     background: "#ececec",
     transition: "all 0.7s",
     margin: "5vh auto",
-    maxWidth: "800px",
+    maxWidth: "md",
     "&:hover": {
       boxShadow: "5px 5px 7px 5px #88bdbc",
     },
@@ -66,13 +66,13 @@ export default function Home() {
       >
         {/* <Image src="/compy.png" alt="Hero picture" width={400} height={300} /> */}
         {/* <Fade> */}
-        <Typography variant="h3" component="h1">
+        <Typography variant="h2" component="h1">
           HAEWOOK LEE.
         </Typography>
-        <Typography variant="h4" component="h1" gutterBottom>
+        <Typography variant="h3" component="h1" gutterBottom>
           Software Developer
         </Typography>
-        <Typography component="p" gutterBottom>
+        <Typography variant="h6" component="h1" gutterBottom>
           Hi, there! I'm a self-taught software developer and ex-lawyer. I love
           building web apps and messing around with new tech.
         </Typography>
