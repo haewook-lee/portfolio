@@ -123,7 +123,7 @@ export default function BlogHome({ data }: any) {
   )
 }
 
-const blogsQuery = `*[_type == "post"] | order(published desc){
+const blogsQuery = `*[_type == "post"] | order(publishedAt desc){
     title,
     "slug": slug.current,
     mainImage{
