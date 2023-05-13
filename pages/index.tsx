@@ -105,7 +105,7 @@ export default function Home() {
               Web App (NextJS + MongoDB)
             </Typography>
             <Typography variant="h4" component="h1" sx={typeStyle}>
-              Workout Database & Tracker (WIP){" "}
+              Workout Database & Tracker{" "}
               <SocialIcon
                 url="https://github.com/haewook-lee/lifting-fit"
                 style={iconStyle2}
