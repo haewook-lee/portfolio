@@ -22,7 +22,7 @@ export default function Layout({ children }: Props) {
         maxWidth="lg"
         style={{
           marginBottom: 0,
-          paddingBottom: 0,
+          paddingBottom: 128,
         }}
       >
         <main>{children}</main>

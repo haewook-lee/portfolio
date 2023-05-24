@@ -125,3 +125,29 @@ a {
     color-scheme: dark;
   }
 }
+
+.bubble {
+  position: relative;
+}
+
+.bubble-text {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.bubble:hover .bubble-text {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.6s;
+}
+
+.bubble:hover .bubble-icon {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
