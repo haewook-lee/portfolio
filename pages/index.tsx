@@ -41,7 +41,7 @@ export default function Home() {
     background: "#ececec",
     transition: "all 0.7s",
     "&:hover": {
-      borderRadius: "3%",
+      borderRadius: "50%",
       boxShadow: "5px 5px 7px 5px #88bdbc",
       width: "90%",
       height: "150px",
@@ -122,13 +122,12 @@ export default function Home() {
           >
             <Grid
               item
-              sx={{ pl: "0 !important" }}
-              xs={12}
+              sx={{ pl: "0 !important", mx: "auto" }}
+              xs={10}
               sm={4}
               // md={3}
-              className="bubble"
             >
-              <Box sx={boxStyle}>
+              <Box sx={boxStyle} className="bubble">
                 <Typography
                   variant="h6"
                   component="h1"
@@ -142,6 +141,8 @@ export default function Home() {
                   style={{
                     color: "#112d32",
                     margin: "auto",
+                    height: "100%",
+                    width: "100%",
                   }}
                   href="https://company-site-xi.vercel.app"
                 >
@@ -153,14 +154,13 @@ export default function Home() {
               </Box>
             </Grid>
             <Grid
-              sx={{ pl: "0 !important" }}
+              sx={{ pl: "0 !important", mx: "auto" }}
               item
-              xs={12}
+              xs={10}
               sm={4}
               // md={3}
-              className="bubble"
             >
-              <Box sx={boxStyle}>
+              <Box sx={boxStyle} className="bubble">
                 <Typography
                   variant="h6"
                   component="h1"
@@ -174,6 +174,8 @@ export default function Home() {
                   style={{
                     color: "#112d32",
                     margin: "auto",
+                    height: "100%",
+                    width: "100%",
                   }}
                   href="https://lifting-fit.vercel.app"
                 >
@@ -185,14 +187,13 @@ export default function Home() {
               </Box>
             </Grid>
             <Grid
-              sx={{ pl: "0 !important" }}
+              sx={{ pl: "0 !important", mx: "auto" }}
               item
-              xs={12}
+              xs={10}
               sm={4}
               // md={3}
-              className="bubble"
             >
-              <Box sx={boxStyle}>
+              <Box sx={boxStyle} className="bubble">
                 <Typography
                   variant="h6"
                   component="h1"
@@ -205,6 +206,8 @@ export default function Home() {
                   style={{
                     color: "#112d32",
                     margin: "auto",
+                    height: "100%",
+                    width: "100%",
                   }}
                   href="https://haewook-lee.github.io/movie-site"
                 >
