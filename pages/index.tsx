@@ -59,7 +59,7 @@ export default function Home() {
         <Box>
           <Grid
             sx={{
-              maxWidth: 920,
+              maxWidth: 1080,
               mx: "auto",
               pb: "150px",
             }}
@@ -92,7 +92,7 @@ export default function Home() {
                   href="https://company-site-xi.vercel.app"
                 >
                   <WorkOutlined
-                    sx={{ fontSize: "4rem" }}
+                    sx={{ fontSize: "12rem" }}
                     className="bubble-icon"
                   />
                 </IconButton>
@@ -124,7 +124,7 @@ export default function Home() {
                   href="https://lifting-fit.vercel.app"
                 >
                   <FitnessCenterOutlined
-                    sx={{ fontSize: "4rem" }}
+                    sx={{ fontSize: "12rem" }}
                     className="bubble-icon"
                   />
                 </IconButton>
@@ -154,7 +154,7 @@ export default function Home() {
                   href="https://haewook-lee.github.io/movie-site"
                 >
                   <TheatersOutlinedIcon
-                    sx={{ fontSize: "4rem" }}
+                    sx={{ fontSize: "12rem" }}
                     className="bubble-icon"
                   />
                 </IconButton>
