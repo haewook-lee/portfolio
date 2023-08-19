@@ -101,6 +101,10 @@ a {
   }
 }
 
+.css-1ecpuer-MuiGrid-root {
+  width: 100% !important;
+}
+
 .bubble {
   position: relative;
 }
