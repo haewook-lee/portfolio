@@ -64,7 +64,8 @@ export default function Home() {
               pb: "150px",
             }}
             container
-            spacing={2}
+            spacing={0}
+            style={{ overflowX: "hidden" }}
           >
             <Grid item sx={{ pl: "0 !important", mx: "auto" }} xs={10} sm={4}>
               <Box sx={boxStyle} className="bubble">
