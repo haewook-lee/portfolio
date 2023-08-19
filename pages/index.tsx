@@ -9,7 +9,6 @@ import IconButton from "@mui/material/IconButton"
 import Head from "next/head"
 
 import { SocialIcon } from "react-social-icons"
-import Fade from "react-awesome-reveal"
 
 export default function Home() {
   const iconStyle = {
@@ -20,32 +19,14 @@ export default function Home() {
     },
   }
 
-  const iconStyle2 = {
-    margin: "0.5rem",
-    opacity: "0.75",
-    height: 30,
-    width: 30,
-    "&:hover": {
-      opacity: "1",
-    },
-  }
   const boxStyle = {
     pl: "0 !important",
     mt: 6,
     mx: "auto",
     display: "flex",
     flexDirection: "column",
-    height: "100px",
-    width: "60%",
-    borderRadius: "40%",
+    height: "250px",
     background: "#ececec",
-    transition: "all 0.7s",
-    "&:hover": {
-      borderRadius: "50%",
-      boxShadow: "5px 5px 7px 5px #88bdbc",
-      width: "90%",
-      height: "150px",
-    },
   }
 
   const typeStyle = {
@@ -68,16 +49,129 @@ export default function Home() {
             maxWidth: 680,
           }}
         >
-          <Typography variant="h2" component="h1">
-            HAEWOOK LEE
+          <Typography variant="h3" component="h1" sx={{ mb: 2 }}>
+            Hey there.
           </Typography>
           <Typography variant="h3" component="h1" gutterBottom>
-            Software Developer
+            I'm Haewook Lee. I'm a software developer that likes to make things.
           </Typography>
-          <Typography variant="h6" component="h1" gutterBottom>
-            Hi, there! I'm a self-taught software developer and ex-lawyer. I
-            love building web apps and messing around with new tech.
-          </Typography>
+        </Box>
+        <Box>
+          <Grid
+            sx={{
+              maxWidth: 920,
+              mx: "auto",
+              pb: "150px",
+            }}
+            container
+            spacing={2}
+          >
+            <Grid item sx={{ pl: "0 !important", mx: "auto" }} xs={10} sm={4}>
+              <Box sx={boxStyle} className="bubble">
+                <Typography
+                  variant="h6"
+                  component="h1"
+                  sx={typeStyle}
+                  className="bubble-text"
+                >
+                  Company Site{"\n"}
+                  <Typography component="p">
+                    A mock-up of a modern company website.
+                  </Typography>
+                </Typography>
+
+                <IconButton
+                  style={{
+                    color: "#112d32",
+                    margin: "auto",
+                    height: "100%",
+                    width: "100%",
+                  }}
+                  disableRipple
+                  href="https://company-site-xi.vercel.app"
+                >
+                  <WorkOutlined
+                    sx={{ fontSize: "4rem" }}
+                    className="bubble-icon"
+                  />
+                </IconButton>
+              </Box>
+            </Grid>
+            <Grid sx={{ pl: "0 !important", mx: "auto" }} item xs={10} sm={4}>
+              <Box sx={boxStyle} className="bubble">
+                <Typography
+                  variant="h6"
+                  component="h1"
+                  sx={typeStyle}
+                  className="bubble-text"
+                >
+                  LiftingFit App{"\n"}
+                  <Typography component="p">
+                    A workout companion with video guides for exercises, along
+                    with a workout tracker.
+                  </Typography>
+                </Typography>
+
+                <IconButton
+                  style={{
+                    color: "#112d32",
+                    margin: "auto",
+                    height: "100%",
+                    width: "100%",
+                  }}
+                  disableRipple
+                  href="https://lifting-fit.vercel.app"
+                >
+                  <FitnessCenterOutlined
+                    sx={{ fontSize: "4rem" }}
+                    className="bubble-icon"
+                  />
+                </IconButton>
+              </Box>
+            </Grid>
+            <Grid sx={{ pl: "0 !important", mx: "auto" }} item xs={10} sm={4}>
+              <Box sx={boxStyle} className="bubble">
+                <Typography
+                  variant="h6"
+                  component="h1"
+                  sx={typeStyle}
+                  className="bubble-text"
+                >
+                  Movies
+                  <Typography component="p">
+                    A database site for sci-fi movies.
+                  </Typography>
+                </Typography>
+                <IconButton
+                  style={{
+                    color: "#112d32",
+                    margin: "auto",
+                    height: "100%",
+                    width: "100%",
+                  }}
+                  disableRipple
+                  href="https://haewook-lee.github.io/movie-site"
+                >
+                  <TheatersOutlinedIcon
+                    sx={{ fontSize: "4rem" }}
+                    className="bubble-icon"
+                  />
+                </IconButton>
+              </Box>
+            </Grid>
+          </Grid>
+        </Box>
+        <Box
+          sx={{
+            mt: 2,
+            mb: 2,
+            mx: "auto",
+            display: "flex",
+            flexDirection: "row",
+            maxWidth: 680,
+          }}
+          style={{ justifyContent: "center" }}
+        >
           <Box>
             <SocialIcon
               url="https://github.com/haewook-lee"
@@ -98,127 +192,6 @@ export default function Home() {
               fgColor="#fef9f3"
             />
           </Box>
-        </Box>
-        <Box
-        // sx={{
-        //   mt: 16,
-        //   mx: "auto",
-        //   display: "flex",
-        //   flexDirection: "column",
-        //   maxWidth: 680,
-        // }}
-        >
-          {/* <Typography variant="h3" component="h1" gutterBottom>
-            Works
-          </Typography> */}
-          <Grid
-            sx={{
-              maxWidth: 680,
-              mx: "auto",
-              pb: "150px",
-            }}
-            container
-            spacing={2}
-          >
-            <Grid
-              item
-              sx={{ pl: "0 !important", mx: "auto" }}
-              xs={10}
-              sm={4}
-              // md={3}
-            >
-              <Box sx={boxStyle} className="bubble">
-                <Typography
-                  variant="h6"
-                  component="h1"
-                  sx={typeStyle}
-                  className="bubble-text"
-                >
-                  Company Site{" "}
-                </Typography>
-
-                <IconButton
-                  style={{
-                    color: "#112d32",
-                    margin: "auto",
-                    height: "100%",
-                    width: "100%",
-                  }}
-                  href="https://company-site-xi.vercel.app"
-                >
-                  <WorkOutlined
-                    sx={{ fontSize: "4rem" }}
-                    className="bubble-icon"
-                  />
-                </IconButton>
-              </Box>
-            </Grid>
-            <Grid
-              sx={{ pl: "0 !important", mx: "auto" }}
-              item
-              xs={10}
-              sm={4}
-              // md={3}
-            >
-              <Box sx={boxStyle} className="bubble">
-                <Typography
-                  variant="h6"
-                  component="h1"
-                  sx={typeStyle}
-                  className="bubble-text"
-                >
-                  Workout Database & Tracker{" "}
-                </Typography>
-
-                <IconButton
-                  style={{
-                    color: "#112d32",
-                    margin: "auto",
-                    height: "100%",
-                    width: "100%",
-                  }}
-                  href="https://lifting-fit.vercel.app"
-                >
-                  <FitnessCenterOutlined
-                    sx={{ fontSize: "4rem" }}
-                    className="bubble-icon"
-                  />
-                </IconButton>
-              </Box>
-            </Grid>
-            <Grid
-              sx={{ pl: "0 !important", mx: "auto" }}
-              item
-              xs={10}
-              sm={4}
-              // md={3}
-            >
-              <Box sx={boxStyle} className="bubble">
-                <Typography
-                  variant="h6"
-                  component="h1"
-                  sx={typeStyle}
-                  className="bubble-text"
-                >
-                  Movie Database Site{" "}
-                </Typography>
-                <IconButton
-                  style={{
-                    color: "#112d32",
-                    margin: "auto",
-                    height: "100%",
-                    width: "100%",
-                  }}
-                  href="https://haewook-lee.github.io/movie-site"
-                >
-                  <TheatersOutlinedIcon
-                    sx={{ fontSize: "4rem" }}
-                    className="bubble-icon"
-                  />
-                </IconButton>
-              </Box>
-            </Grid>
-          </Grid>
         </Box>
       </Box>
     </>

@@ -17,7 +17,7 @@ export default function Layout({ children }: Props) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <ToolBar />
+      {/* <ToolBar /> */}
       <Container
         maxWidth="lg"
         style={{

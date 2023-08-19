@@ -6,7 +6,7 @@ import ButtonAppBar from "../components/SimpleNavBar"
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Layout>
-      <ButtonAppBar />
+      {/* <ButtonAppBar /> */}
       <Component {...pageProps} />
     </Layout>
   )
